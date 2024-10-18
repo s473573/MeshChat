@@ -1,0 +1,24 @@
+#:kivy 1.0
+
+<PeerScreen>:
+    StackLayout:
+        id: peer_layout
+        padding: dp(20)
+        spacing: dp(20)
+        # size_hint: (0.25, 1)
+
+<PeerWidget>:
+    size_hint: (0.25, 0.25)
+    BoxLayout:
+        orientation: 'vertical'
+        pos_hint: {'top': 1}
+
+        Label:
+            id: peer_pubkey
+            text_size: root.width, None
+        Label:
+            id: last_msg
+            text_size: root.width, None
+            text: "not connected"
+        Button:
+            id: chat_button

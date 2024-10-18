@@ -1,0 +1,20 @@
+#:kivy 1.0
+
+<ChatScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: dp(10)
+
+        Label:
+            id: peer_label
+            size_hint: (1, 0.1)
+        BoxLayout:
+            id: message_layout
+            orientation: 'vertical'
+            size_hint: (0.8, 0.75)
+            pos_hint: {'center_x': 0.5}
+        TextInput:
+            id: message_input
+            hint_message: ''
+            size_hint: (0.8, 0.15)
+            pos_hint: {'center_x': 0.5}
